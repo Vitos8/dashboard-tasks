@@ -9,7 +9,7 @@ import useFetch from "@/shared/api/use-fetch";
 import useMutate from "@/shared/api/use-mutate";
 import { ApiRoutes, HttpMethods, QueryKeys } from "@/shared/lib/constants";
 import { Loader } from "@/shared/ui/loader";
-import { useParams, usePathname, useRouter } from "next/navigation";
+import { useParams, useRouter } from "next/navigation";
 import React from "react";
 import {
 	DragDropContext,

@@ -2,7 +2,7 @@
 import { LampContainer } from "@/shared/ui/lamp-section";
 import { motion } from "framer-motion";
 
-export const InvitedBoardsPage = () => {
+const InvitedBoardsPage = () => {
 	return (
 		<LampContainer>
 			<motion.h1
@@ -20,3 +20,5 @@ export const InvitedBoardsPage = () => {
 		</LampContainer>
 	);
 };
+
+export default InvitedBoardsPage;
