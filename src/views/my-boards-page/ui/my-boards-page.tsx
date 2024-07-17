@@ -36,7 +36,7 @@ const MyBoardsPage = () => {
                             />
                         </BoardItem>
                     ))}
-                    <div className="max-w-[300px] h-[350px] flex justify-center items-center flex-shrink-0">
+                    <div className="w-[300px] h-[350px] flex justify-center items-center flex-shrink-0">
                         <button
                             onClick={() => onOpen("createBoard")}
                             className="btn btn-outline flex  mx-auto"
