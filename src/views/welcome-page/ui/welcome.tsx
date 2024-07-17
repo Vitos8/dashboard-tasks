@@ -1,21 +1,14 @@
 "use client";
 import { AppRoutes } from "@/shared/lib/constants";
 import { WavyBackground } from "@/shared/ui/wavy-background";
-import { useUser } from "@clerk/nextjs";
 import { useRouter } from "next/navigation";
 
-export const WelcomePage = () => {
+const WelcomePage = () => {
 	const router = useRouter();
-	const { isSignedIn } = useUser();
 
 	const handleSignIn = () => {
-		if (isSignedIn) {
-			return router.push(AppRoutes.myBoards);
-		}
 		router.push(AppRoutes.signIn);
 	};
-
-	const handleSignUp = () => {};
 
 	return (
 		<>
@@ -43,3 +36,5 @@ export const WelcomePage = () => {
 		</>
 	);
 };
+
+export default WelcomePage;
