@@ -7,7 +7,7 @@ import withSignInToDb from "@/shared/model/with-signIn-to-db";
 import { CanvasRevealEffect } from "@/shared/ui/canvas-reveal-effect";
 import { Loader } from "@/shared/ui/loader";
 import { EmptyBoard } from "@/widgets/empty-board";
-import { useAuth, useClerk, useSession } from "@clerk/nextjs";
+import { useAuth } from "@clerk/nextjs";
 import { GrChapterAdd } from "react-icons/gr";
 
 const MyBoardsPage = () => {
@@ -16,7 +16,7 @@ const MyBoardsPage = () => {
     const { data: boards, isLoading } = useFetch({
         key: QueryKeys.Boards,
         id: userId as string,
-        url: ApiRoutes.getAllBoards,
+        url: `${ApiRoutes.getAllBoards}?userId=${userId}`,
     });
 
 
