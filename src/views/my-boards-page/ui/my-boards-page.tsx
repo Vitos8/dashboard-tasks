@@ -39,7 +39,7 @@ const MyBoardsPage = () => {
                     <div className="w-[300px] h-[350px] flex justify-center items-center flex-shrink-0">
                         <button
                             onClick={() => onOpen("createBoard")}
-                            className="btn btn-outline flex  mx-auto"
+                            className="btn btn-outline flex ml-4"
                         >
                             Create one more <GrChapterAdd />
                         </button>
