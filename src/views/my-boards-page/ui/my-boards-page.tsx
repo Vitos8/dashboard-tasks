@@ -27,19 +27,19 @@ const MyBoardsPage = () => {
             {!boards || boards.length === 0 ? (
                 <EmptyBoard />
             ) : (
-                <div className="flex mt-10  gap-10 px-10 py-4">
+                <div className="flex mt-10 px-10 py-4 gap-10">
                     {boards?.map((board: IBoard) => (
                         <BoardItem key={board.boardName} board={board}>
                             <CanvasRevealEffect
                                 animationSpeed={2.7}
-                                containerClassName="bg-emerald-900"
+                                containerClassName=""
                             />
                         </BoardItem>
                     ))}
-                    <div className="w-[300px] h-[350px] flex justify-center items-center flex-shrink-0">
+                    <div className="min-w-[300px] h-[350px] flex justify-center items-center flex-shrink-0">
                         <button
                             onClick={() => onOpen("createBoard")}
-                            className="btn btn-outline flex ml-4"
+                            className="btn shadow-2xl text-white btn-neutral flex mx-auto"
                         >
                             Create one more <GrChapterAdd />
                         </button>
