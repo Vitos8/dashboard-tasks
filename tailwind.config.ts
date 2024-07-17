@@ -22,9 +22,9 @@ const config: Config = {
 		},
 	},
 	plugins: [
-		require('@tailwindcss/forms'),
-		require('@tailwindcss/typography'),
-		require("daisyui"), addVariablesForColors],
+		require("daisyui"),
+		addVariablesForColors
+	],
 };
 
 function addVariablesForColors({ addBase, theme }: any) {
